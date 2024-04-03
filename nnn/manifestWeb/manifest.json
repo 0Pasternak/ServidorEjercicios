@@ -1,0 +1,14 @@
+{
+  "name": "Mi aplicación web",
+  "short_name": "Mi app",
+  "description": "Una aplicación web sencilla",
+  "icons": [
+    {
+      "src": "./as.png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "background_color": "#000000"
+}

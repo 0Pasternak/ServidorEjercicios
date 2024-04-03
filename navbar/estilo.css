@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none; /* Oculto por defecto */
+  cursor: pointer;
+  font-size: 30px;
+  z-index: 99900;
+  position: absolute;
+}
+
+.fila-1 ul, .fila-2 ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fila-2 ul {
+  width: 100%;
+}
+
+.fila-3 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 50;
+}
+
+.fila-3 nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+
+@media (max-width: 991px) {
+  .fila-1 ul {
+    display: none;
+  }
+
+  .fila-3 {
+    flex-direction: column;
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out;
+  }
+
+  #menu-toggle:checked ~ .fila-3 {
+    width: 250px;
+    transform: translateX(0%);
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-bar .fila.fila-2 .menu-icon {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .fila-3 {
+    position: static;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  /* Asegurarse de que el menú fila-3 esté visible */
+  .fila-3 {
+    transform: none;
+    width: auto;
+  }
+}

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.top-nav{
+    background-color: black;
+
+}
+
+.fila-1{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 30px;
+
+}
+
+.fila-2{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+
+.iconos{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.button-nav{
+    display: none;
+}
+
+.fila-3{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+
+
+

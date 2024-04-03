@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación Responsiva</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- <nav>
+        <div class="top-nav">
+            <ul class="fila-1">
+                <li>opcion1</li>
+                <li>opcion1</li>
+                <li>opcion1</li>
+                <li>opcion1</li>
+                <li>opcion1</li>
+            </ul>
+        </div>
+        <div class="mid-nav">
+            <ul class="fila-2">
+                <li class="button-nav">
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                </li>
+                <li>
+                    <img src="logo.png" alt="Logo">
+                </li>
+                <li>
+                    <input type="search" placeholder="Buscar...">
+                </li>
+                <li>
+                    <ul class="iconos">
+                        <li>uno</li>
+                        <li>uno</li>
+                        <li>uno</li>
+                        <li>uno</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-nav">
+            <ul class="fila-3">
+                <li>opcion1</li>
+                <li>opcion1</li>
+                <li>opcion1</li>
+                <li>opcion1</li>
+                <li>opcion1</li>
+                <li>opcion1</li>
+                <li>opcion1</li>
+                <li>opcion1</li>
+            </ul>
+        </div>
+    </nav> -->
+
+
+<header class="nav-bar">
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        
+        <div class="fila">
+            <nav class="fila-1">
+                <ul>
+                    <li>opcion1</li>
+                    <li>opcion1</li>
+                    <li>opcion1</li>
+                    <li>opcion1</li>
+                    <li>opcion1</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="fila fila-2">
+            <ul>
+                <li class="logo">
+                    <img src="logo.png" alt="Logo">
+                </li>
+                <li class="buscador">
+                    <input type="search" placeholder="Buscar...">
+                </li>
+                <li>
+                    <ul class="iconos">
+                        <li>uno</li>
+                        <li>uno</li>
+                        <li>uno</li>
+                        <li>uno</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="fila fila-3">
+            <nav>
+                <a href="#">Opción 6</a>
+                <a href="#">Opción 7</a>
+                <a href="#">Opción 8</a>
+            </nav>
+        </div>
+    </header> 
+
+    <script>
+        window.addEventListener('resize', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            if (window.innerWidth > 991) {
+                menuToggle.checked = false;
+            }
+        });
+    </script>
+</body>
+
+</html>

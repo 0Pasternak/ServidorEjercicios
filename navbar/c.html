@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú Responsivo</title>
+<link rel="stylesheet" href="s.css">
+</head>
+<body>
+
+<div id="menuIcon" onclick="toggleMenu()">☰</div>
+<div id="menuContainer">
+  <div id="logo">Logo</div>
+  <nav id="menu">
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Productos</a>
+    <a href="#">Contacto</a>
+  </nav>
+</div>
+
+<script>
+    function toggleMenu() {
+      document.getElementById("menuContainer").classList.toggle("active");
+    }
+  
+    // Escuchar cambios de tamaño de la ventana
+    window.addEventListener('resize', function() {
+      // Si la ventana es más ancha que 991px y el menú está activo, ciérralo
+      if (window.innerWidth > 991 && document.getElementById("menuContainer").classList.contains("active")) {
+        document.getElementById("menuContainer").classList.remove("active");
+      }
+    });
+  </script>
+  
+
+</body>
+</html>
